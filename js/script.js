@@ -1,12 +1,14 @@
 
 
-const RADIO_NAME = 'Game! Radio 1';
-
+const RADIO_NAME = 'Rádio Pontas'
 // SELECT ARTWORK PROVIDER, ITUNES, DEEZER & SPOTIFY  eg : spotify 
 var API_SERVICE = 'DEEZER';
 
 // Change Stream URL Here, Supports, ICECAST, ZENO, SHOUTCAST, RADIOJAR and any other stream service.
-const URL_STREAMING = 'http://stream.zeno.fm/g4qzkzldylnuv';
+const URL_STREAMING = 'https://stm1.voxplayer.com.br:7164/stream';
+
+//PASTE YOUR MEDIA CP JSON URL HERE TO GET NOW PLAYING SONG TITLE.
+const MEDIACP_JSON_URL = 'https://player.voxplayer.com.br/player-home-page/7164/musica/https://stm1.voxplayer.com.br:7164/stats?json=1&sid=1&callback=jQuery32107753726473094489_1697294620659&_=1697294621138'
 
 //API URL / if you use MEDIA CP, CHANGE THIS TO : https://api.streamafrica.net/metadata/mediacp.php?url='+MEDIACP_JSON_URL
 const API_URL = 'https://api.streamafrica.net/metadata/index?z='+URL_STREAMING
